@@ -1,16 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Form</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="{{url_for('home')}}"><p>Home</p></a>
+        </li>
+        <li>
+          <a href="{{url_for('pizzaFormPage')}}"><p>Pizza Form</p></a>
+        </li>
+      </ul>
+    </nav>
 
-<h1>Pizza Form</h1>
+    <h1>Pizza Form</h1>
 
-{% block content %}
-{% endblock content %}
-
-</body>
+    {% block content %} {% endblock content %}
+  </body>
 </html>
